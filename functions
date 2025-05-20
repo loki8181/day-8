@@ -1,0 +1,93 @@
+functions
+s1       s1
+s2        s2
+s3=> m()  s3=>m()
+s4         s4
+s1         m()
+s2         s5
+s3         m()
+s5
+s1
+s2
+s3
+multiple lines code repeated use block functions
+to avoid repeat box going to use funtion
+
+4 important  funtion
+1.function call
+ .function name
+ .open and close parathesis
+ .semi colon
+ 2.function defintion
+ .return type(void,int,float)
+ .funtion name
+ .open and close parathesis
+ .
+eg. void csa()
+ {
+ entire content
+ }
+(we can use void,but cannot use function)
+void-not necessary to return 0;
+
+example
+#include <stdio.h>
+ void csa()
+
+{
+printf("\ni am in csa fun");
+it();
+printf("\ni am back to csa fun");
+}
+ void it()
+{
+printf("\ni am in it fun");
+ }
+ int main()
+{
+printf("i am in main fun");
+csa();
+printf("\ni am back to main fun");
+return 0;
+}
+
+#include <stdio.h>
+
+int csa() {
+    return 25 * 2;
+}
+
+int main() {
+    printf("%d", csa());
+    return 0;
+}
+
+#include <stdio.h>
+              x    y
+void csa(int a,int b ) {
+    printf("%d",a+b);
+}               x+y
+ int main ()
+ {
+     int a=5;
+     int b=10;
+     csa(a,b);
+     return 0;
+ }
+ call by vlaue and call by reference
+ call function 
+
+ function defintion
+ #include <stdio.h>
+
+void csa(int x,int y) {
+    printf("%d",x+y);
+}
+ int main ()
+ {
+     int a=5;
+     int b=10;
+     csa(100,50);
+     return 0;
+ }
+
