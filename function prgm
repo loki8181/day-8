@@ -12,3 +12,93 @@ int main() {
     return 0;
 }
 factorial prgm
+#include <stdio.h>
+
+int main() {
+    int num, i;
+    unsigned long long factorial = 1;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+
+    // Check for negative input
+    if (num < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } else {
+        for (i = 1; i <= num; ++i) {
+            factorial *= i;
+        }
+        printf("Factorial of %d = %llu\n", num, factorial);
+    }
+
+    return 0;
+}
+
+greatest number
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a >= b && a >= c)
+        printf("The greatest number is: %d\n", a);
+    else if (b >= a && b >= c)
+        printf("The greatest number is: %d\n", b);
+    else
+        printf("The greatest number is: %d\n",c);
+return 0 ;
+}
+
+prime numbers
+#include <stdio.h>
+
+int main() {
+    int num, i, isPrime = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num <= 1) {
+        isPrime = 0;
+    } else {
+        for (i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+    }
+
+    if (isPrime)
+        printf("%d is a prime number.\n", num);
+    else
+        printf("%d is not a prime number.\n", num);
+
+    return 0;
+}
+
+reverse a number
+
+#include <stdio.h>
+
+int main() {
+    int num, reversed = 0, remainder;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while (num != 0) {
+        remainder = num % 10; 
+        reversed = reversed * 10 + remainder; 
+
+        num /= 10;  // Remove the last digit
+    }
+
+    printf("Reversed number = %d\n", reversed);
+
+    return 0;
+}
