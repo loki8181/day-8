@@ -90,4 +90,15 @@ void csa(int x,int y) {
      csa(100,50);
      return 0;
  }
+include <stdio.h>
+
+float csa() {
+    return 5.9999;
+}
+
+int main() {
+    printf("%f", csa());
+    return 0;
+}
+
 
